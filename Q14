@@ -1,0 +1,7 @@
+# write a program to convert minutes to hour and  minutes
+
+a=int(input("Enter Minutes:"))
+b=a%60
+c=int(a/60)
+# print ("hours=",c ,"minutes=",b)
+print(f"{c} hours and {b} minutes")  #alternate method using f strigns
