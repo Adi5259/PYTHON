@@ -4,4 +4,5 @@ a=int(input("Enter Minutes:"))
 b=a%60
 c=int(a/60)
 # print ("hours=",c ,"minutes=",b)
-print(f"{c} hours and {b} minutes")  #alternate method using f strigns
+# print(f"{c} hours and {b} minutes")  #alternate method using f strigns
+print(str.format(f"{c} hours and {b} minutes")) #using str.format
