@@ -1,1 +1,16 @@
+# Write a program to calculate compound intrest
 
+p = int(input("Principal amount: "))
+r = float(input("Rate (% per annum): "))
+t = float(input("Duration (in years): "))
+n = int(input("Number of times interest is compounded per year: "))
+
+# Convert annual rate to decimal
+r = r / 100
+
+# Compound interest formula
+A = p * ((1 + r/n) ** (n * t))
+interest = A - p
+
+print(f"Compound Interest = {interest:.2f}") # .2f is used to display the output upto 2 decimal places
+print(f"Total Amount = {A:.2f}")
