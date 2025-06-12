@@ -1,0 +1,5 @@
+# WAP that calculates the distance between two points (x1,y1) and (x2,y2)
+import math
+x1,x2,y1,y2 =map(int,input("Enter the co-ordinates:").split()) # taking two inputs at a time
+distance = math.sqrt(((x2-x1)**2)-((y2-y1)**2))
+print(distance)
