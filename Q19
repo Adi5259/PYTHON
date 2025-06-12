@@ -1,0 +1,12 @@
+# Write a program to convert seconds into hour and minutes
+# 60 seconds = 1 minute
+# 3600 second = 1 Hour
+a= int(input("Enter seconds:"))
+b=int(a/60)
+d=int(a%60)
+print("{0} second equal to {1} minutes and {2} seeconds".format(a,b,d))
+c=int(a/3600)
+e=int(a%3600)
+f=int(e/60) #minutes
+g=int(e%60) #seconds
+print("{0} second equal to {1} hours {2} minutes {3} seconds".format(a,c,f,g))
