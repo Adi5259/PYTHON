@@ -1,0 +1,9 @@
+# WAP to determine if a character is consonant or vowel
+
+char = input("Enter the character: ")
+if len(char)!=1 or not char.isalpha():
+    print("Invalid input")
+elif char in 'aeiou':
+    print("Vowel")
+else:
+    print("consonant")    
