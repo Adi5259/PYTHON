@@ -1,0 +1,10 @@
+# Given three sides WAP to check whether a triangle is valid or not
+"""
+A triangle is said to be valid if sum of two sides is greater than third side
+"""
+
+a,b,c= map(int,input("Enter a,b and c:").split(','))
+if((a+b)>c and (a+c)>b and (b+c)>a):
+    print("The given triangle is vallid:")
+else:
+    print("Invalid triangle")    
