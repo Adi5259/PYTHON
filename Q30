@@ -1,0 +1,16 @@
+# WAP that determines the quadrant of a point in the coordinate sysytem
+x,y = map(int,input("Enter x and y coordinate").split())
+if x==0 and y==0:
+    print("Origin")
+elif x==0 and y!=0:
+    print("The point lie on the Y-axis ")
+elif x!=0 and y==0:
+    print("The point lie on the X-axis ")     
+elif x>0 and y>0:
+    print("First quadrant")
+elif x<0 and y>0:
+    print("Second quadrant")
+elif x<0 and y<0:
+    print("Third Quadrant")
+else:
+    print("Fourth quadrant")            
