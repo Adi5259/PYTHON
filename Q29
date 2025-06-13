@@ -1,0 +1,13 @@
+income = float(input("Enter the income: "))
+age = int(input("Enter age: "))
+
+if age < 18:
+    print("Not eligible for loan (underage)")
+elif age >= 18 and income < 10000:
+    print("Eligible for a loan of amount up to 5000")
+elif age > 25 and 10000 <= income < 45000:
+    print("Eligible for a loan of amount up to 35000")
+elif age > 25 and 45000 <= income < 100000:
+    print("Eligible for a loan of amount up to 80000")
+else:
+    print("Not eligible for a loan under current criteria")
