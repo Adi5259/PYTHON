@@ -1,0 +1,14 @@
+# WAP to find sum of digits
+num=int(input("Enter the number :"))
+sum=0
+if num==0:
+    print("The digit sum is 0")
+else:    
+ while num>0:
+    x=num%10
+    num=num//10
+    sum=sum+x
+    
+ print(sum)
+    
+     
