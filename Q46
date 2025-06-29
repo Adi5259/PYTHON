@@ -1,0 +1,6 @@
+#WAF to calculate area of circle
+import math
+def area(radius):
+    A=math.pi * radius**2
+    return A
+print(area(7))
